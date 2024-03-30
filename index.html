@@ -4,105 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=M+PLUS+Code+Latin:wght@100..700&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Mi primer sitio Web</title>
+    <title>IA</title>
 </head>
 
 <body>
     <header>
-        <h1>Titulo Principal</h1>
+        <h1 class="titulo_principal">
+            La Inteligencia Artificial: Un viaje a través del tiempo</h1>
         <nav>
             <ul class="navegacion">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Contactenos</a></li>
-
+                <a href="">
+                    <li>Introduccion</li>
+                </a>
+                <a href="">
+                    <li>Historia</li>
+                </a>
+                <a href="">
+                    <li>Chat Bots</li>
+                </a>
+                <a href="">
+                    <li>Imagenes</li>
+                </a>
+                <a href="">
+                    <li>Otras Tecnologias</li>
+                </a>
             </ul>
+
         </nav>
     </header>
     <main>
+        <div class="contenedor-imagen1">
+            <img src="./assets/media/chatgpt.jpg" alt="" class="imagen1">
+        </div>
         <section>
-            <h2>Noticias</h2>
-            <article>
-                <div class="contenedor">
-                    <div class="links">
-                        <h2>Chat GPT</h2>
-                        <a href="https://chat.openai.com/" target="_blank"> <img src="assets/media/chatgpt.jpg"
-                                class="logo"></img></a>
-                    </div>
-
-                    <div class="links">
-                        <h2>Gemini</h2>
-                        <a href="https://gemini.google.com/app" target="_blank"> <img
-                                src="./assets/media/Google-Gemini-IA.webp" class="logo"></img></a>
-                    </div>
-
-                    <div class="links">
-                        <h2>Nota principal</h2>
-                        <img><a href="">I</a></img>
-                    </div>
-
-                    <div class="links">
-                        <h2>Nota principal</h2>
-                        <img><a href="">I</a></img>
-                    </div>
-                    <div class="articulo">
-                        <h2>Monitor 24´</h2>
-                        <a href=""><img src="./assets/media/unnamed.jpg" class="logo"></img></a>
-                        <p>Monitor Dell</p>
-                        <p>$1000</p>
-                        <button class="boton-emergente">Comprar</button>
+            <div class="contenedor">
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(1)">Precursores y Primeros Pasos (1940s - 1950s): <span
+                            id="icono1" class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto1">
+                        <p>La historia de la inteligencia artificial (IA) comienza mucho antes de la acuñación del
+                            término
+                            en 1956. A principios de la década de 1940, Warren McCulloch y Walter Pitts sentaron las
+                            bases
+                            con su modelo de neuronas artificiales, inspirándose en el funcionamiento del cerebro
+                            humano.
+                            Alan Turing, considerado el padre de la IA, consolidó el campo con su famoso artículo
+                            "Computing
+                            Machinery and Intelligence" en 1950, donde propuso la Prueba de Turing para medir la
+                            inteligencia de una máquina.
+                        </p>
                     </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique molestias dolorem mollitia,
-                    voluptate fugit aspernatur quo? Tenetur dignissimos a fugit aut, nisi cum placeat in quae deleniti?
-                    Necessitatibus, accusamus laboriosam?</p>
-            </article>
-        </section>
-        <section>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FdZ8LKiJBhQ?si=3aIM5ofoJcG4fND-"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(2)">El Amanecer de la IA (1956 - 1970s): <span id="icono2"
+                            class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto2">
+                        <p>En 1956, John McCarthy organizó la Conferencia de Dartmouth, considerada el evento
+                            fundacional de
+                            la IA. Allí, se reunieron pioneros como Marvin Minsky y Newell y Simon para discutir la
+                            posibilidad de crear máquinas inteligentes. La década de 1960 vio un gran optimismo y
+                            avances en
+                            áreas como el procesamiento del lenguaje natural (PLN) y el aprendizaje automático (ML).
+                        </p>
+                    </div>
+                </div>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(3)">Auge y Caída (1970s - 1980s): <span id="icono3"
+                            class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto3">
+                        <p>A pesar del progreso inicial, la década de 1970 llegó con un "invierno de la IA" debido a la
+                            dificultad de alcanzar las expectativas optimistas. La falta de recursos computacionales y
+                            la
+                            complejidad de los problemas de IA limitaron el desarrollo. Sin embargo, algunos avances
+                            importantes en áreas como el razonamiento simbólico y la visión artificial se lograron
+                            durante
+                            este período.
+                        </p>
+                    </div>
+                </div>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(4)">Renacimiento y Expansión (1990s - 2000s): <span
+                            id="icono4" class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto4">
+                        <p>El resurgimiento de la IA comenzó en la década de 1990 con la llegada de nuevos algoritmos,
+                            mayor
+                            potencia computacional y la disponibilidad de grandes conjuntos de datos. El desarrollo de
+                            Internet y la World Wide Web impulsaron aún más la investigación en IA, abriendo nuevas
+                            posibilidades en áreas como la búsqueda web, el comercio electrónico y la robótica.
+                        </p>
+                    </div>
+                </div>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(5)">Evolución y Convergencia (2010s - Presente): <span
+                            id="icono5" class="icono">+</span>
+                    </div>
+                    <div class="contenido" id="contenidoTexto5">
+                        <p>En la actualidad, la IA se encuentra en un estado de rápida evolución y convergencia con
+                            otras
+                            tecnologías como el Big Data, la robótica y el Internet de las Cosas (IoT). La explosión del
+                            aprendizaje profundo ha impulsado avances sin precedentes en áreas como el reconocimiento de
+                            imágenes, el procesamiento del lenguaje natural y la traducción automática.
+                        </p>
+                    </div>
+                </div>
+                <!-- Repetir para los demás cuadros -->
             </div>
+
         </section>
-        <footer>Copyright 2024</footer>
-        <div class="ventana-emergente">
-            <h2>Monitor DELL</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae quas id repudiandae animi tempora velit.
-                Reiciendis laborum, suscipit, minima architecto ipsum nihil consequatur dicta adipisci mollitia culpa
-                corporis officiis itaque.</p>
-            <button class="boton-cerrar">Cerrar</button>
-        </div>
+
     </main>
+    <footer>
+
+    </footer>
     <script>
-        const botonEmergente = document.querySelector(".boton-emergente");
-        const ventanaEmergente = document.querySelector(".ventana-emergente");
+        function toggleTexto(numero) {
+            var contenidoTexto = document.getElementById("contenidoTexto" + numero);
+            contenidoTexto.classList.toggle("mostrar");
 
-        botonEmergente.addEventListener("click", () => {
-            ventanaEmergente.classList.add("visible");
-        });
+            var icono = document.getElementById("icono" + numero);
+            if (icono.innerHTML === "+") {
+                icono.innerHTML = "-";
+            } else {
+                icono.innerHTML = "+";
+            }
+        }
 
-
-
-        const botonCerrar = document.querySelector(".boton-cerrar");
-
-        botonEmergente.addEventListener("click", () => {
-            ventanaEmergente.classList.add("visible");
-        });
-
-        botonCerrar.addEventListener("click", () => {
-            ventanaEmergente.classList.remove("visible");
-        });
 
     </script>
 </body>
