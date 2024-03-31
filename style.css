@@ -1,5 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
-    background-color: aquamarine;
+    background-color: #946EFA;
+    font-family: "Source Code Pro", monospace;
 }
 
 .cuadro-desplegable {
@@ -16,7 +24,7 @@ body {
     cursor: pointer;
     user-select: none;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     /* Evita que el texto se seleccione al hacer clic */
 }
 
@@ -28,8 +36,8 @@ body {
 
 .contenido.mostrar {
     display: block;
-    background-color: rgb(171, 170, 170);
-    font-size: 1.5em;
+    background-color: #CB82FA;
+    font-size: 1.2em;
     /* Se muestra cuando está activo */
 }
 
@@ -44,26 +52,10 @@ body {
     text-align: justify;
 }
 
-.navegacion {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    color: white;
-
-}
-
-.navegacion li {
-    margin-right: 30px;
-    font-size: 1.5em;
-
-}
-
-.navegacion li:hover {
-    background-color: darkgray;
-    color: white;
 
 
-}
+
+
 
 .imagen1 {
     width: 500px;
@@ -76,20 +68,100 @@ body {
     margin: 50px;
 }
 
-@media screen and (max-width: 768px) {
-    .navegacion {
-        max-width: 300px;
-        /* Ajusta el ancho máximo de la lista */
-        display: block;
-        text-align: center;
-    }
 
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-}
 
 .titulo_principal {
     text-align: center;
+    background-color: #C26EFA;
+}
+
+/* Estilos generales */
+
+/* Estilos generales */
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ececec;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 777px) {
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+
+
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+
+
+
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+
+    }
 }

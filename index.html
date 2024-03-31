@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=M+PLUS+Code+Latin:wght@100..700&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>IA</title>
@@ -11,27 +18,17 @@
 
 <body>
     <header>
-        <h1 class="titulo_principal">
-            La Inteligencia Artificial: Un viaje a través del tiempo</h1>
-        <nav>
-            <ul class="navegacion">
-                <a href="">
-                    <li>Introduccion</li>
-                </a>
-                <a href="">
-                    <li>Historia</li>
-                </a>
-                <a href="">
-                    <li>Chat Bots</li>
-                </a>
-                <a href="">
-                    <li>Imagenes</li>
-                </a>
-                <a href="">
-                    <li>Otras Tecnologias</li>
-                </a>
+        <img class="logo" src="./assets/media/Google-Gemini-IA.webp" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Qué hacemos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
-
         </nav>
     </header>
     <main>
@@ -117,23 +114,9 @@
 
     </main>
     <footer>
-
+        <p>Copyright 2024</p>
     </footer>
-    <script>
-        function toggleTexto(numero) {
-            var contenidoTexto = document.getElementById("contenidoTexto" + numero);
-            contenidoTexto.classList.toggle("mostrar");
-
-            var icono = document.getElementById("icono" + numero);
-            if (icono.innerHTML === "+") {
-                icono.innerHTML = "-";
-            } else {
-                icono.innerHTML = "+";
-            }
-        }
-
-
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
