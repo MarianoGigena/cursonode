@@ -17,6 +17,8 @@ body {
     width: 768px;
 }
 
+
+
 .titulo {
     background-color: black;
     color: white;
@@ -39,6 +41,19 @@ body {
     background-color: #CB82FA;
     font-size: 1.2em;
     /* Se muestra cuando está activo */
+}
+
+@media screen and (max-width: 777px) {
+    .cuadro-desplegable {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+
+    .titulo {
+        font-size: 1em;
+    }
 }
 
 .icono {
