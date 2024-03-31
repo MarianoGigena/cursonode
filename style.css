@@ -103,6 +103,11 @@ header {
     color: #1c1c1c;
 }
 
+.nav-list li a:hover {
+    text-decoration: none;
+    background-color: burlywood;
+}
+
 .abrir-menu,
 .cerrar-menu {
     display: none;
@@ -164,4 +169,9 @@ header {
         color: #ecececec;
 
     }
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
 }
