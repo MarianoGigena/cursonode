@@ -52,7 +52,14 @@ body {
     }
 
     .titulo {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    .contenido.mostrar {
+        display: block;
+        background-color: #CB82FA;
+        font-size: 0.8em;
+        /* Se muestra cuando está activo */
     }
 }
 
